@@ -14,7 +14,7 @@ function getRandomColor() {
 
 const RandColored = props => {
   const saltedChildren = React.Children.map(props.children, (child, idx) => {
-    const bgColor = getRandomColor();
+    // const bgColor = getRandomColor();
     return React.cloneElement(child, {
       bgColor: "#fff"
     });
